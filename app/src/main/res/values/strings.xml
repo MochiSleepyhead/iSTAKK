@@ -1,5 +1,41 @@
 <resources>
     <string name="app_name">iSTAKK</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="homeRecycler">homeRecycler</string>
+    <string name="homeRecycler_product" />
+
+    <string-array name="homeRecycler_product_names">
+        <item>Product_name_!</item>
+        <item>Product_name_2</item>
+        <item>Product_name_3</item>
+        <item>Product_name_4</item>
+        <item>Product_name_5</item>
+        <item>Product_name_6</item>
+        <item>Product_name_7</item>
+
+    </string-array>
+
+    <string-array name="homeRecycler_status">
+        <item>Stock Running Low</item>
+        <item>Stock Full</item>
+        <item>Stock Stagnant for X weeks</item>
+        <item>Stock Running Low</item>
+        <item>Stock Full</item>
+        <item>Stock Empty</item>
+        <item>Stock Full</item>
+
+    </string-array>
+
+    <string-array name="homeRecycler_stock">
+        <item>4/50</item>
+        <item>10/10</item>
+        <item>24/50</item>
+        <item>2/25</item>
+        <item>60/60</item>
+        <item>0/5</item>
+        <item>7/7</item>
+
+    </string-array>
+
+
 </resources>
