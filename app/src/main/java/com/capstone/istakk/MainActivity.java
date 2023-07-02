@@ -61,42 +61,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-    @Override
-    protected void onPostCreate(Bundle savedInstanceState) {
-        super.onPostCreate(savedInstanceState);
-
-        // Set up the recycler view
-        setUphomeRecyclerModels();
-
-        homeRecyclerViewAdapter adapter = new homeRecyclerViewAdapter(this, homeRecyclerModels);
-
-        // Set the adapter for the recycler view
-        RecyclerView recyclerView = findViewById(R.id.homeRecyclerView);
-        recyclerView.setAdapter(adapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
-        binding.bottomNavigationView.setOnItemSelectedListener(item -> {
-
-            if (item.getItemId() == R.id.home) {
-                // Replace with the appropriate fragment for the Home button
-                replaceFragment(new HomeFragment());
-            } else if (item.getItemId() == R.id.history) {
-                // Replace with the appropriate fragment for the History button
-                replaceFragment(new HistoryFragment());
-            } else if (item.getItemId() == R.id.inventory) {
-                // Replace with the appropriate fragment for the Inventory button
-                replaceFragment(new InventoryFragment());
-            } else if (item.getItemId() == R.id.form) {
-                // Replace with the appropriate fragment for the Form button
-                replaceFragment(new FormFragment());
-            }
-
-            return true;
-
-
-
-        });
-    }
 
     private void setUphomeRecyclerModels(){
         String[] homeProduct_names = getResources().getStringArray(R.array.homeRecycler_product_names);
